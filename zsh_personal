@@ -41,6 +41,7 @@ bindkey "^[[B" down-line-or-beginning-search  # Down arrow
 
 
 # Enhanced command logging.
+# Record each command with timestamp and working directory to daily log files under ~/local/log/zsh/
 zsh_command_logger() {
     local log_dir="$LOG"/zsh
     mkdir -p "$log_dir"
